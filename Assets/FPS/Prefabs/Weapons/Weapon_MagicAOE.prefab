@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8007270267671954120}
   - component: {fileID: 1949726848134598643}
   m_Layer: 0
-  m_Name: Weapon_MagicWand
+  m_Name: Weapon_MagicAOE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,19 +142,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponName: Magic Wand
-  weaponIcon: {fileID: 21300000, guid: 64247976928dbc1409db54100517a3c5, type: 3}
+  weaponIcon: {fileID: 21300000, guid: d2d1d4482f459dc4f8abb3cc669b1a1d, type: 3}
   crosshairDataDefault:
-    crosshairSprite: {fileID: 21300000, guid: e881aa18189b12f4e915fc5b14ddc421, type: 3}
-    crosshairSize: 50
-    crosshairColor: {r: 1, g: 1, b: 1, a: 1}
+    crosshairSprite: {fileID: 21300000, guid: 14aa1febcf423c84997aa10d7ff64d17, type: 3}
+    crosshairSize: 100
+    crosshairColor: {r: 0.61855555, g: 0.9150943, b: 0.4963955, a: 1}
   crosshairDataTargetInSight:
-    crosshairSprite: {fileID: 21300000, guid: e881aa18189b12f4e915fc5b14ddc421, type: 3}
-    crosshairSize: 50
+    crosshairSprite: {fileID: 21300000, guid: 14aa1febcf423c84997aa10d7ff64d17, type: 3}
+    crosshairSize: 100
     crosshairColor: {r: 1, g: 0, b: 0, a: 1}
   weaponRoot: {fileID: 7011803983646017291}
   weaponMuzzle: {fileID: 7930774106829166489}
   shootType: 1
-  projectilePrefab: {fileID: 528546716365072993, guid: 45b4634d395363a4395281d41deb8c22,
+  projectilePrefab: {fileID: 6867404450943131836, guid: 0e23901b938cf4f4eb86850d912715eb,
     type: 3}
   delayBetweenShots: 0.3
   bulletSpreadAngle: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   ammoUsedOnStartCharge: 1
   ammoUsageRateWhileCharging: 1
   weaponAnimator: {fileID: 0}
-  muzzleFlashPrefab: {fileID: 748781637555137343, guid: 3f5b545b9a1e74c418b061bba5bb9e2c,
+  muzzleFlashPrefab: {fileID: 748781637555137343, guid: 9f671b22f25370048a18fb1f821294ec,
     type: 3}
   unparentMuzzleFlash: 0
   shootSFX: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
@@ -445,6 +445,61 @@ PrefabInstance:
         type: 3}
       propertyPath: simulationSpeed
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.91532904
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.23113209
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key3.r
+      value: 0.07035947
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key3.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.r
+      value: 0.6189927
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.g
+      value: 0.8773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.b
+      value: 0.16140087
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 0.8440317
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692336672675980230, guid: 3998f03ea9cb5cc49855e0f69045c4ad,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0.26379493
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3998f03ea9cb5cc49855e0f69045c4ad, type: 3}
